@@ -24,10 +24,10 @@ WORKDIR /home/cganda/workspace
 RUN su ${USERNAME} --command \
     'sudo git config --system --add safe.directory "/home/${USERNAME}/workspace"'
 
-ARG INSTALL_MAVEN="true"
+ARG INSTALL_MAVEN="false"
 ARG MAVEN_VERSION=""
 
-ARG INSTALL_GRADLE="false"
+ARG INSTALL_GRADLE="true"
 ARG GRADLE_VERSION=""
 
 RUN if [ "${INSTALL_MAVEN}" = "true" ]; then su vscode -c "umask 0002 && . /usr/local/sdkman/bin/sdkman-init.sh && sdk install maven \"${MAVEN_VERSION}\""; fi \

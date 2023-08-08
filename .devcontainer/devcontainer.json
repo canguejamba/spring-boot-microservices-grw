@@ -4,7 +4,7 @@
 	"name": "workspace",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "workspace",
-	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"workspaceFolder": "/home/cganda/workspace",
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"overrideCommand": true,
 	"postCreateCommand": "java -version",
@@ -18,11 +18,9 @@
 				"fosshaas.fontsize-shortcuts",
 				"vscjava.vscode-java-pack",
 				"vscjava.vscode-spring-initializr",
-				"vscjava.vscode-maven",
-				"ms-azuretools.vscode-docker",
-				"vscjava.vscode-java-dependency",
-				"vmware.vscode-boot-dev-pack",
-				"rangav.vscode-thunder-client"
+				"vscjava.vscode-gradle",
+				"rangav.vscode-thunder-client",
+				"ms-azuretools.vscode-docker"
 			],
 			"settings": {
 				"search.exclude": {
