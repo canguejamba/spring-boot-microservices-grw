@@ -1,0 +1,37 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/java-postgres
+{
+	"name": "workspace",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "workspace",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"overrideCommand": true,
+	"postCreateCommand": "java -version",
+	// Configure tool-specific properties.
+	"shutdownAction": "stopCompose",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"esbenp.prettier-vscode",
+				"streetsidesoftware.code-spell-checker",
+				"fosshaas.fontsize-shortcuts",
+				"vscjava.vscode-java-pack",
+				"vscjava.vscode-spring-initializr",
+				"vscjava.vscode-maven",
+				"ms-azuretools.vscode-docker",
+				"vscjava.vscode-java-dependency",
+				"vmware.vscode-boot-dev-pack",
+				"rangav.vscode-thunder-client"
+			],
+			"settings": {
+				"search.exclude": {
+					"**/.docker": true
+				},
+				"thunder-client.saveToWorkspace": true,
+				"java.configuration.updateBuildConfiguration": "automatic",
+				"git.mergeEditor": false
+			}
+		}
+	}
+}
