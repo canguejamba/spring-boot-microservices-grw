@@ -1,0 +1,76 @@
+{
+    "_id": "9b1fb01f-0a29-4831-af47-a041de49240d",
+    "colName": "book database",
+    "created": "2023-08-04T04:11:50.310Z",
+    "sortNum": 10000,
+    "folders": [
+        {
+            "_id": "b7b28d88-d980-41d4-b29e-0703b0bfd40f",
+            "name": "author api",
+            "containerId": "",
+            "created": "2023-08-04T04:22:59.585Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "578f86a4-2dcc-43d4-9e4b-4cb9427dde04",
+            "name": "comment api",
+            "containerId": "",
+            "created": "2023-08-04T04:23:28.752Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "d579fa1c-0888-4701-a357-2e7af4a42b33",
+            "name": "book api",
+            "containerId": "",
+            "created": "2023-08-04T04:24:16.960Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "21dcb4fd-6e8a-43d0-b68d-76c41fdf10e6",
+            "colId": "9b1fb01f-0a29-4831-af47-a041de49240d",
+            "containerId": "b7b28d88-d980-41d4-b29e-0703b0bfd40f",
+            "name": "get health",
+            "url": "{{BASE_URL}}/book-service/health",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-08-04T04:23:04.983Z",
+            "modified": "2023-08-08T17:51:02.756Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "97c653bb-f524-4049-abd8-f04cfb621ab7",
+            "colId": "9b1fb01f-0a29-4831-af47-a041de49240d",
+            "containerId": "578f86a4-2dcc-43d4-9e4b-4cb9427dde04",
+            "name": "get health",
+            "url": "{{BASE_URL}}/comment-service/health",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-08-04T04:23:32.352Z",
+            "modified": "2023-08-08T17:51:08.673Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6ae1114a-86e2-49bd-962c-b2be1aeabc06",
+            "colId": "9b1fb01f-0a29-4831-af47-a041de49240d",
+            "containerId": "d579fa1c-0888-4701-a357-2e7af4a42b33",
+            "name": "get health",
+            "url": "{{BASE_URL}}/author-service/health",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-08-04T04:24:21.927Z",
+            "modified": "2023-08-08T17:51:14.243Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "envId": "d207fadd-4f52-4e61-82b5-5841056a54e6"
+    }
+}
