@@ -12,7 +12,9 @@ public class HealthController {
 
     @GetMapping("")
     public ResponseEntity<String> getHealth() {
+        String text = "tyt";
         return ResponseEntity.ok("Comment API is up and running");
     }
+
 
 }
